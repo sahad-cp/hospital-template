@@ -1,17 +1,28 @@
 
+.navbar{
+	background-color: black;
+}
 .navbar-brand{
-    font-weight: 700;
-    color: rgb(17, 212, 17);
+    font-weight: 900;
+    color: #04C254;
     margin-left: -15px
     
 }
 .navbar-brand span{
     margin-left: -20px;
 }
+
+.nav-link.act{
+	color:#04C254 !important;
+	
+}
+
 .nav-link{
     font-family: serif;
     margin-right: 15px;
     position: relative;
+	font-weight: 800;
+	
 
 }
 .nav-link::before{
@@ -21,17 +32,19 @@
     right: 0;
     bottom: 0;
     height: 3px;
-    background-color: rgb(115, 204, 51);
+    background-color: #04C254;
     transition: all 0.5s ease;
     transform: scale(0);
 }
-.nav-link.active::before,
+.nav-link.act::before,
 .nav-link:hover::before{
     transform: scale(1);
 }
 .nav-link{
-    color: black;
+    color: rgb(255, 255, 255) !important;
 }
+
+
 
 
 /*------------------ footer----------- */
@@ -50,7 +63,7 @@ section {
 }
 
 .footer-distributed{
-	background-color: rgb(12, 173, 12);
+	background-color: #04C254;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
