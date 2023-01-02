@@ -1,6 +1,21 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block title %}
     Services
 {% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static '/css/service.css' %}">
+{% endblock css %}
+
+{% block content %}
+        <div class="my-5"></div>
+        <div class="scroll-img d-flex justify-content-center">
+            <div class="inner-div text-center">
+                <h1>Our Services</h1>
+                <p>Get In touch With Us</p>
+            </div>
+        </div>
+        
+{% endblock content %}

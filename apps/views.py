@@ -9,8 +9,6 @@ def department(request):
     return render(request,'department.html')
 def doctors(request):
     return render(request,'doctors.html')
-def booking(request):
-    return render(request,'booking.html')
 def services(request):
     return render(request,'services.html')
 def contact(request):

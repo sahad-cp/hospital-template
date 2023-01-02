@@ -1,6 +1,20 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block title %}
     Doctors
 {% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static '/css/doctor.css' %}">
+{% endblock css %}
+
+{% block content %}
+        <div class="my-5"></div>
+        <div class="scroll-img d-flex justify-content-center">
+            <div class="inner-div text-center">
+                <h1>Our Doctors</h1>
+                <p>Get In touch With Us</p>
+            </div>
+        </div>
+{% endblock content %}

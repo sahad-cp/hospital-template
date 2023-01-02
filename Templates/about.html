@@ -1,7 +1,101 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block title %}
     About
 {% endblock title %}
-    
+
+{% block css %}
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+{% endblock css %}
+
+{% block content %}
+        <div class="my-5"></div>
+        <div class="scroll-img d-flex justify-content-center">
+            <div class="inner-div text-center">
+                <h1>About Hospital</h1>
+                <p>Story About Our Hospital</p>
+            </div>
+        </div>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md-8 ">
+                    <h1 class="t-black">We Offer a full range of Professional mental Health services to children, Adults, Couples, and Families.</h1>
+                    <p class="mt-5" style="margin-bottom: 50px;">Donec luctus rhoncus dignissim. Integer blandit mattis arcu, id viverra orci condimentum a. Quisque nibh tortor, mollis placerat semper ac, auctor quis mauris. Praesent dignissim sed magna eu urna consectetur, at pretium nisi aliquet. Sed vestibulum malesuada semper. Init Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a href="#" class="p-3 mt-5 l-btn">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <h1 class="mt-5 t-black">
+                            About Us _____
+                        </h1>
+                        <img src="{% static '/images/healthcare.jpg' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mrg-t">
+            <div class="d-block text-center">
+                <h1 class="t-black">Certified by the Joint Commission</h1>
+                <p class="grey-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque illo molestiae numquam! Quisquam hic corporis dolorem eos eius labore rerum obcaecati modi vero, accusantium inventore natus sequi quam enim possimus?</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6 text-center i-style">
+                    <i class="fa-solid fa-stethoscope mt-2"></i>
+                    <h2>1250</h2>
+                    <p>Doctors</p>
+                </div>
+                <div class="col-md-3 col-6 text-center i-style">
+                    <i class="fa-solid fa-hand-holding-medical"></i>
+                    <h2>12000+</h2>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="col-md-3 col-6 text-center i-style">
+                    <i class="fa-solid fa-truck-medical mt-2"></i>
+                    <h2>10000</h2>
+                    <p>Medical Beds</p>
+                </div>
+                <div class="col-md-3 col-6 text-center i-style">
+                    <i class="fa-solid fa-award"></i>
+                    <h2>250+</h2>
+                    <p>Winning Awards</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mrg-t">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static '/images/service.jpg' %}" class="img-fluid service-img" alt="">
+                    
+                </div>
+                <div class="col-md-6">
+                    <h1 class="t-black">Private Care Service - Certified by the Joint Commission</h1>
+                    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero recusandae optio obcaecati rem corporis alias nam. Ea assumenda possimus.</p>
+                    <p class="mt-4 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ad aliquam sit, quo quisquam atque nulla sed ducimus molestiae natus tenetur officia esse? Alias eligendi facilis error, sequi quis reiciendis!</p>
+                    <a href="#" class="p-3 mt-5 l-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="mrg-t d-flex justify-content-center img-back">
+            <div class="text-center w-50 mt-5 mb-5 z-content">
+                <h1>Keep Improving Our Hospital</h1>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur. Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+                <h5 class="mt-5">ACTIVITY LEVEL</h5>                    
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h5>SATISFACTION</h5>                
+                <div class="progress">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h5>SATISFACTION</h5>                
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

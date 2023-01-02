@@ -1,6 +1,9 @@
-
+*{
+	box-sizing: border-box;
+}
 .navbar{
-	background-color: black;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 3px solid #04C254;
 }
 .navbar-brand{
     font-weight: 900;
@@ -41,7 +44,7 @@
     transform: scale(1);
 }
 .nav-link{
-    color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 
@@ -70,6 +73,7 @@ section {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+	margin-top: 150px;
 }
 
 .footer-distributed .footer-left,

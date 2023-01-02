@@ -42,14 +42,84 @@ a{
     color: #04C254;
 }
 .second-div{
-    height: 100vh;
+    height: auto;
     width: 100%;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
 }
-
-
-
-
-
+.grey-p{
+    color: gray;
+    font-family: serif;
+}
+.first-div2{
+    width: 80%;
+}
+.sec-icon i{
+    color: #ffffff;
+    background-color: #04C254;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-size: 35px;
+}
+.sec-icon .fa-temperature-three-quarters{
+    font-size: 30px;
+    padding: 13px 19px;
+}
+.home-doc-img{
+    
+    height: 550px;
+    
+}
+.index-doc{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #04C254;
+}
+.third-div{
+    background-image: url('../images/index-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    align-items: center;
+    margin-top: 150px;
+}
+.third-div::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.third-2{
+    z-index: 100;
+    align-items: center;
+}
+.third-2 h1{
+    font-weight: 800;
+}
+.third-2 p{
+    font-family: serif;
+}
+.fourth-row{
+    width: 80%;
+}
+.mini-card{
+    border-radius: 5px ;
+    box-shadow: 4px 4px 7px -3px;
+    display: flex;
+    justify-content: center;
+}
+.fourth-div{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
 
 
 @media screen and (max-width:768px){
@@ -59,6 +129,26 @@ a{
     }
     .s-caption p{
         font-size: 10px;
+    }
+    .slideBtn{
+        border: 2px solid white;
+        padding: 7px 7px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        border-radius: 5px;
+        font-size:10px ;
+    }
+
+      
+}
+@media screen and (max-width:380px){
+    .s-caption h1{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .s-caption p{
+        font-size: 5px;
     }
     .slideBtn{
         border: 2px solid white;

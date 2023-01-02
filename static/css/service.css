@@ -1,0 +1,23 @@
+.scroll-img{
+    background: url('../images/banner2.jpg') no-repeat fixed 100%;
+    position: relative;
+}
+.scroll-img::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(4, 194, 83, 0.343);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.inner-div{
+    margin: 60px 0px;
+    z-index: 100;
+    color: white;
+}
+.inner-div h1{
+    font-weight: 500;
+}
