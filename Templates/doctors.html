@@ -17,4 +17,25 @@
                 <p>Get In touch With Us</p>
             </div>
         </div>
+        <div class="container">
+            {% for d in doctors %}
+        <div class="card text-center m-3" style="width: 18rem; display:inline-block;">
+            <img src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dr.{{d.doc_name}}</h5>
+                <h6 class="card-text">{{d.dep_name}} Department</h6>
+                <div class="d-flex justify-content-center">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                
+             </div>
+        </div>
+    
+
+
+    {% endfor %}
+        </div>
+        
 {% endblock content %}
