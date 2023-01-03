@@ -120,6 +120,10 @@ a{
     margin-top: 200px;
     margin-bottom: 50px;
 }
+.mini i{
+    font-size: 40px;
+    color: #04C254;
+}
 
 
 @media screen and (max-width:768px){
