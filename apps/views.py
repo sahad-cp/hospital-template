@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Departments,Doctors
+from .form import Appointment
 
 # Create your views here.
 def home(request):
@@ -32,7 +33,26 @@ def doctors(request):
 
 def services(request):
     return render(request,'services.html')
+
+
+
+
+
 def contact(request):
-    return render(request,'contact.html')
+    if request.method == "POST":
+        form = Appointment(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request,'confirmation.html')
+        
+    form = Appointment()
+    dict_form = {
+        'form': form
+    }    
+    return render(request,'contact.html',dict_form)
+
+
+
+
 def confirmation(request):
     return render(request,'confirmation.html')

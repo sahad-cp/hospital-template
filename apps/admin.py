@@ -3,6 +3,9 @@ from .models import Booking,Departments,Doctors
 # Register your models here.
 
 
-admin.site.register(Booking)
+class BookingAdmin(admin.ModelAdmin):
+    list_display = ('id','fullName','email','doc_name','booking_date')
+
+admin.site.register(Booking,BookingAdmin)
 admin.site.register(Departments)
 admin.site.register(Doctors)
