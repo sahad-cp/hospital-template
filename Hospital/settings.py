@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps',
     'active_link',
-    'dashboard',
+    
     
 ]
 
@@ -134,3 +135,19 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
+
+JAZZMIN_SETTINGS = {
+    "site_brand": "Admin Panel",
+    "welcome_sign": "Dashboard",
+    "user_avatar": "static/images/user-logo.webp",
+    "topmenu_links": [
+
+        
+        {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
+    ]
+}
+JAZZMIN_UI_TWEAKS = {
+
+    "theme": "journal",
+    
+} 

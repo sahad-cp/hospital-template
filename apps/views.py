@@ -43,7 +43,7 @@ def contact(request):
         form = Appointment(request.POST)
         if form.is_valid():
             form.save()
-            return render(request,'confirmation.html')
+        return render(request,'confirmation.html')
         
     form = Appointment()
     dict_form = {
